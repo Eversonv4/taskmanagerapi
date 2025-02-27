@@ -31,3 +31,8 @@ class SessionsController < ApplicationController
       @session = Current.user.sessions.find(params[:id])
     end
 end
+
+
+=begin
+  O "bearer" token vem no header da requisição com o nome de "x-session-token" da rota de login (sign_in)
+=end
