@@ -45,3 +45,5 @@ end
 
 
 gem "authentication-zero", "~> 4.0"
+
+gem "dockerfile-rails", ">= 1.7", :group => :development

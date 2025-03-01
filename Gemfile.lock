@@ -90,6 +90,8 @@ GEM
     debug (1.10.0)
       irb (~> 1.10)
       reline (>= 0.3.8)
+    dockerfile-rails (1.7.9)
+      rails (>= 3.0.0)
     dotenv (2.8.1)
     dotenv-rails (2.8.1)
       dotenv (= 2.8.1)
@@ -265,6 +267,7 @@ DEPENDENCIES
   bootsnap
   brakeman
   debug
+  dockerfile-rails (>= 1.7)
   dotenv-rails (~> 2.1, >= 2.1.1)
   pg (~> 1.1)
   puma (>= 5.0)
