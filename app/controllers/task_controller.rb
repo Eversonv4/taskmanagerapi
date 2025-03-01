@@ -26,6 +26,16 @@ class TaskController < ApplicationController
     end
   end
 
+  def update
+    @task = @user.task
+
+    if @task.update(task_params)
+      render json: @task, status: :ok
+    else
+      render json: @task.errors, status: :unprocessable_entity
+    end
+  end
+
   private
 
     def set_user
